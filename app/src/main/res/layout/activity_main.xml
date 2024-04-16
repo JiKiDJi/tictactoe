@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD6464"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="650"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:background="#EA4444"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="330"
+            tools:layout_editor_absoluteX="20dp">
+
+
+            <LinearLayout  style="@style/LinearLayout">
+
+                <Button
+                    android:id="@+id/button0"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout >
+
+            <LinearLayout  style="@style/LinearLayout">
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout >
+
+            <LinearLayout style="@style/LinearLayout">
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/ButtonStyle"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:paddingHorizontal="5dp"
+            android:background="#EA4444"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_weight="50"
+            tools:layout_editor_absoluteX="20dp">
+
+            <TextView
+                android:id="@+id/p1"
+                style="@style/TextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="3"
+
+                android:text="P1:" />
+
+            <EditText
+                android:id="@+id/p1_input"
+                style="@style/TextStyle"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="6"
+                android:maxLength="6"
+                android:inputType="text|textFilter"
+                android:hint="P1"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/p2"
+                style="@style/TextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="4"
+
+                android:text="P2:" />
+
+            <EditText
+                android:id="@+id/p2_input"
+                style="@style/TextStyle"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="6"
+                android:maxLength="6"
+                android:inputType="text|textFilter"
+                android:hint="P2"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_weight="150"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteX="1dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="5"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="6"
+                        android:checkedButton="@+id/radioFirst">
+
+                        <TextView
+                            android:id="@+id/choice"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:importantForAccessibility="no"
+                            android:textColor="#FFFFFF"
+                            android:textSize="28sp"
+                            android:text="P1:" />
+
+                        <RadioButton
+                            android:id="@+id/radioFirst"
+                            android:text="X"
+                            style="@style/Radio"/>
+
+                        <RadioButton
+                            android:id="@+id/radioSecond"
+                            android:text="O"
+                            style="@style/Radio"/>
+
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:checkedButton="@+id/radioPvP">
+
+                        <RadioButton
+                            android:id="@+id/radioPvP"
+                            android:text="PvP"
+                            style="@style/Radio"/>
+
+                        <RadioButton
+                            android:id="@+id/radioPvC"
+                            android:text="PvC"
+                            style="@style/Radio"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    tools:text="Computer has won" />
+
+                <Button
+                    android:id="@+id/ng_button"
+                    style="@style/ButtonColors"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:text="New Game" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:layout_weight="120"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_weight="7">
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:importantForAccessibility="no"
+                    android:gravity="center"
+                    android:text="Score:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp" />
+
+                <Button
+                    android:id="@+id/reset"
+                    style="@style/ButtonColors"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:text="Reset" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:weightSum="4"
+                android:layout_weight="13"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/player1"
+                        style="@style/TextStyle"
+                        android:text="P1:" />
+
+                    <TextView
+                        android:id="@+id/player2"
+                        style="@style/TextStyle"
+                        android:text="P2:" />
+
+                    <TextView
+                        android:id="@+id/draw"
+                        style="@style/TextStyle"
+                        android:text="Draw:" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/player1_info"
+                        style="@style/TextStyle" />
+
+                    <TextView
+                        android:id="@+id/player2_info"
+                        style="@style/TextStyle" />
+
+                    <TextView
+                        android:id="@+id/draw_info"
+                        style="@style/TextStyle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
