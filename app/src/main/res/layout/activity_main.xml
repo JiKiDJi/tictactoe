@@ -240,7 +240,7 @@
                     android:id="@+id/textfield"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="4"
+                    android:layout_weight="5"
                     android:gravity="center"
                     android:importantForAccessibility="no"
                     android:textColor="#FFFFFF"
@@ -252,7 +252,7 @@
                     style="@style/ButtonColors"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="6"
+                    android:layout_weight="5"
                     android:text="New Game" />
 
             </LinearLayout>
